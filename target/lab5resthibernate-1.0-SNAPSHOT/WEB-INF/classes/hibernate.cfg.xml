@@ -4,15 +4,17 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/lab5rest?createDatabaseIfNotExist=true</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/company?createDatabaseIfNotExist=true</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-         <property name="connection.username">root</property>
-        <property name="connection.password">Swapnil@123</property>
+         <property name="connection.username">abhi</property>
+        <property name="connection.password">Abhi@8800</property>
 
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
-        <mapping class="com.example.erp.bean.Students" />
-        <mapping class="com.example.erp.bean.Courses" />
+        <mapping class="com.example.erp.bean.Bill" />
+        <mapping class="com.example.erp.bean.User" />
+        <mapping class="com.example.erp.bean.Student_payment" />
+        <mapping class="com.example.erp.bean.student" />
     </session-factory>
 </hibernate-configuration>
